@@ -5,7 +5,8 @@ A lightweight macOS menu bar app that displays real-time network upload and down
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-macOS%2013%2B-blue" alt="Platform">
   <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift">
-  <img src="https://img.shields.io/badge/Size-~100KB-green" alt="Size">
+  <img src="https://img.shields.io/badge/Size-~1.7MB-green" alt="Size">
+  <img src="https://img.shields.io/badge/Homebrew-Available-yellow" alt="Homebrew">
   <img src="https://img.shields.io/badge/Dependencies-None-brightgreen" alt="Dependencies">
   <img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="License">
 </p>
@@ -33,6 +34,27 @@ The app displays a compact two-row layout in your menu bar:
 Click it to see the dropdown with detailed speeds, session totals, and settings.
 
 ## Installation
+
+### Homebrew (Recommended)
+
+```bash
+brew tap mohith-labs/tap
+brew install --cask netspeed
+```
+
+This automatically downloads, installs to `/Applications`, and removes the macOS quarantine flag.
+
+To uninstall:
+```bash
+brew uninstall --cask netspeed
+```
+
+### Download from Releases
+
+1. Go to [Releases](https://github.com/mohith-labs/MacNetspeed/releases)
+2. Download `NetSpeed-v1.0.0-macOS.zip`
+3. Unzip and drag `NetSpeed.app` to `/Applications`
+4. If macOS blocks it, run: `xattr -dr com.apple.quarantine /Applications/NetSpeed.app`
 
 ### Build from Source
 
