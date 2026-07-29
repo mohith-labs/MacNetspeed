@@ -16,6 +16,7 @@ echo "📦 Creating app bundle..."
 mkdir -p "$MACOS" "$RESOURCES"
 cp ".build/release/NetSpeed" "$MACOS/NetSpeed"
 cp "Resources/Info.plist" "$CONTENTS/Info.plist"
+cp "Resources/AppIcon.icns" "$RESOURCES/AppIcon.icns"
 echo -n "APPL????" > "$CONTENTS/PkgInfo"
 chmod +x "$MACOS/NetSpeed"
 
