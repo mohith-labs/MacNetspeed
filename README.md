@@ -39,6 +39,7 @@ Click it to see the dropdown with detailed speeds, session totals, and settings.
 
 ```bash
 brew tap mohith-labs/tap
+brew trust --cask mohith-labs/tap/netspeed
 brew install --cask netspeed
 ```
 
